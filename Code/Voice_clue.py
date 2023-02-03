@@ -27,7 +27,7 @@ def describe(keyword):
 
 
 def main():
-  img=Image.open("ICON.jpg")
+  img=Image.open("/ICON.jpg")
   st.image(img)
   st.title("Voice CLUE")
   form = st.form(key="user_settings")
