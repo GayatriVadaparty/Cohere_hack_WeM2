@@ -9,7 +9,7 @@ from gtts import gTTS
 from dotenv import load_dotenv
 load_dotenv()
 def describe(keyword):
-  co = cohere.Client(os.environ.get("COHERE_CLIENT"))
+  co = cohere.Client("7NH2fjhdG7qqzrlBrWyXimSB2gMbPDpHiypV7PF6")
   response = co.generate(
     model='command-xlarge-20221108',
     prompt=f"Write a paragraph about {keyword} ",
