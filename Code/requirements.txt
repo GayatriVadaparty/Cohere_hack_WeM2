@@ -1,0 +1,7 @@
+gTTS==2.3.1
+cohere==3.2.3
+Pillow==9.2.0
+pip==22.3.1
+protobuf==3.19.0
+python-dotenv==0.21.1
+streamlit==1.17.0
