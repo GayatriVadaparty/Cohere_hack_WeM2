@@ -11,9 +11,9 @@ from io import BytesIO
 from pygame import mixer
 load_dotenv()
 def describe(keyword):
-  co = cohere.Client("7NH2fjhdG7qqzrlBrWyXimSB2gMbPDpHiypV7PF6")
+  co = cohere.Client(API_KEY)
   response = co.generate(
-    model='command-xlarge-20221108',
+    model= MODEL,
     prompt=f"Write a paragraph about {keyword} ",
     max_tokens=200,
     temperature=0.5,
