@@ -6,8 +6,6 @@ from streamlit.web import cli as stcli
 from streamlit import runtime
 import streamlit as st
 from gtts import gTTS
-from googletrans import Translator
-import translators as ts
 from dotenv import load_dotenv
 load_dotenv()
 def describe(keyword):
