@@ -25,7 +25,6 @@ def describe(keyword):
   print('Prediction: {}'.format(response.generations[0].text))
   return response.generations[0].text
 
-
 def main():
   st.title("Voice CLUE")
   form = st.form(key="user_settings")
