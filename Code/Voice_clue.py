@@ -7,6 +7,8 @@ from streamlit import runtime
 import streamlit as st
 from gtts import gTTS
 from dotenv import load_dotenv
+from io import BytesIO
+from pygame import mixer
 load_dotenv()
 def describe(keyword):
   co = cohere.Client("7NH2fjhdG7qqzrlBrWyXimSB2gMbPDpHiypV7PF6")
@@ -36,8 +38,11 @@ def main():
       if submit:
         cohere_txts = describe(kw)
         myobj = gTTS(text=cohere_txts,lang='en', slow=False, tld=req_tld)
-        myobj.save("output.mp3")
-        os.system("output.mp3")
+#         myobj.save("output.mp3")
+#         os.system("output.mp3")
+        mp3_play=BytesIO()
+        myobj.write_to_fp(mp3_play)
+        st.audio(mp3_play,format="audio/mp3")
         st.markdown(f"Generated Description : ")
         st.write(myobj.text)  
 if __name__ == "__main__":
