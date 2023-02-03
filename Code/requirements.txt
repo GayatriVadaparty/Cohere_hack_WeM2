@@ -5,3 +5,4 @@ pip==22.3.1
 protobuf==3.19.0
 python-dotenv==0.21.1
 streamlit==1.17.0
+pygame==2.1.2
