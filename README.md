@@ -26,4 +26,9 @@ Omatsola Sunday
 
 Umar Siddiqui
 
+### How to run the code?
+```
+streamlit run filename.py
+```
+Type this in command prompt and you can see the localhost opened for interface.
 
