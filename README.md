@@ -32,3 +32,7 @@ streamlit run filename.py
 ```
 Type this in command prompt and you can see the localhost opened for interface.
 
+### Deployed app
+Click here to view a demo
+https://gayatrivadaparty-cohere-hack-wem2-codevoice-clue-pliaoz.streamlit.app/
+
