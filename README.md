@@ -22,9 +22,6 @@ More at this link: https://lablab.ai/event/cohere-hackathon
 
 [Srinadh Vura](https://www.linkedin.com/in/srinadh-vura-85a99b20a/)
 
-Omatsola Sunday 
-
-Umar Siddiqui
 
 ### How to run the code?
 ```
